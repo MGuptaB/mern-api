@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const productRoute = require('./api/routes/product');
+// const productRoute = require('./api/routes/product');
 const userRoute = require('./api/routes/user');
 const categorypath = require('./api/routes/category')
 const mongoose = require('mongoose');
@@ -36,7 +36,7 @@ app.use(cors(
   }
 ));
 
-app.use('/product',productRoute);
+// app.use('/product',productRoute);
 app.use('/user',userRoute);
 app.use('/category',categorypath);
 
