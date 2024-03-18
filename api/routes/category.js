@@ -15,7 +15,7 @@ cloudinary.config({
 
 
 
-router.get('/', checkAuth, (req,res,next)=>{
+router.get('/', (req,res,next)=>{
     Category.find()
    
 
